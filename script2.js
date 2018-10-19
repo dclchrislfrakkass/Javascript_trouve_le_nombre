@@ -11,11 +11,12 @@ var nbCoups;
 nombre = 0;
 compteur = 0;
 nbCoups = 0;
+const DEBUG = false;
 
 //calculer un nombre aléatoire entre 0 et celui choisit par l'utilisateur
 nombreMax = parseInt(prompt("Entrez un chiffre maximum pour jouer"))
 var nombreHasard = Math.floor(Math.random() * nombreMax);
-console.log(nombreHasard);
+if (DEBUG) {console.log(nombreHasard);}
 
 //choisir le nombre de coups en fonction du chiffre max choisit
 if (nombreMax <= 50) {
